@@ -29,18 +29,18 @@ namespace devnull
             else return false;
         }
 
-        public static void loadSourceAndTarges(List<string> volumes, List<string> sourcePaths, List<string> targetPaths)
+        public static void loadSourceAndTarges(List<string> volumes, List<string> sourcePaths, List<string> targetPaths, string source, string target)
         {
             foreach (var v in volumes)
             {
-                string sourceFullPath = Path.Combine(v, SOURCE);
+                string sourceFullPath = Path.Combine(v, source);
                 if (File.Exists(sourceFullPath))
                 {
                     Tools.LogLine("source found:" + sourceFullPath, ConsoleColor.Green);
                     sourcePaths.Add(v);
                 }
 
-                string targetFullpath = Path.Combine(v, TARGET);
+                string targetFullpath = Path.Combine(v, target);
                 if (File.Exists(targetFullpath))
                 {
                     Tools.LogLine("target found:" + targetFullpath, ConsoleColor.Green);

@@ -73,7 +73,7 @@ namespace devnull
             List<string> sourcePaths = new List<string>();
             List<string> targetPaths = new List<string>();
 
-            loadSourceAndTarges(volumes, sourcePaths, targetPaths);
+            Tools.loadSourceAndTarges(volumes, sourcePaths, targetPaths, SOURCE, TARGET);
 
             if (targetPaths.Count == 0)
             {
