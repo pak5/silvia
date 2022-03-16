@@ -10,6 +10,7 @@ namespace devnull
     {
         public static bool userApprovedBackup()
         {
+
             Console.Write("Perform backup ? [y/n] : ");
 
             string userAnswer = Console.ReadLine().Trim();
