@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace devnull
 {
     /// <summary>
-    /// This program copy files from targets to destinations in zip format.
+    /// This program copy files from targets to destinations in zip xformat. 
     /// 
     /// 1.Create file with source pathes e.g : 
     /// 
